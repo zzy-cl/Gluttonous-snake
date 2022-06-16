@@ -1,25 +1,26 @@
 <div align="center"><img width="200" src="https://s1.imagehub.cc/images/2022/06/16/b02a2c20d320e1feb2919a056ef7ad0d.webp"/>
-<h1>开心贪吃蛇</h1>
+<h1>开心贪吃蛇</h1></div>
 
-<p>夏已至，万物盛，愿所有美好纷沓而来！</p>
+---
+<div align="center"><p>夏已至，万物盛，愿所有美好纷沓而来！</p></div>
 
 ---
 
 ## 🎉 特性
 
-- 💪 超级简易
-- 💅 Bug超多
-- 🌍 目前只支持单一的PC端
-- 👏 代码混乱，像个shi山
-- 🥳 简单好玩，对象看了都说垃圾
-- 🚀 运行无卡顿，因为是纯静态的
-- 📦️ 无需后端渲染，因为比必要
+- 💪超级简易
+- 💅Bug超多
+- 🌍目前只支持单一的PC端
+- 👏代码混乱，像个shi山
+- 🥳简单好玩，对象看了都说垃圾
+- 🚀运行无卡顿，因为是纯静态的
+- 📦️无需后端渲染，因为比必要
 
 ## 🌐 地址
 
 - [🎉 纯js版本（目前只支持 PC）](https://gluttonous-snake-eight.vercel.app/)
 
-- [⚡️ vue3.x +vite2+elementPlus（支持 PC,***还没上线***）]()
+- [⚡️vue3.x +vite2+elementPlus（支持 PC,***还没上线***）]()
 
 - [🌐 github 仓库地址](https://github.com/zzy-cl/Gluttonous-snake)
 

@@ -1,0 +1,75 @@
+<!-- author:zzy -->
+<!-- 何时仗尔看南雪，我与梅花两白头 -->
+<!-- Blog:https://yyhome.vercel.app -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>贪吃蛇</title>
+    <script src="food.js"></script>
+    <script src="snake.js"></script>
+    <script src="game.js"></script>
+    <link rel="stylesheet" type="text/css" href="./reset.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+<audio src="双笙_墨小竹-牵丝戏.mp3" autoplay></audio>
+
+<div class="btnbox">
+    <button id="gamestart">开始</button>
+    <button id="gamestop">暂停</button>
+    <button id="gamerestart">结束</button>
+</div>
+<div class="overbg"></div>
+
+<div class="map"></div>
+
+<div class="score">
+    <h1>计分板</h1>
+    <div>0</div>
+</div>
+<script>
+    const games = new Game('.map', '.score div', '.overbg')
+    // 获取按钮
+    const gamestart = document.querySelector('#gamestart')
+    gamestart.onclick = () => {
+        games.start()
+    }
+    const gamestop = document.querySelector('#gamestop')
+    gamestop.onclick = () => {
+        games.stop()
+    }
+    const gamerestart = document.querySelector('#gamerestart')
+    gamerestart.onclick = () => {
+        games.restart()
+    }
+    //    键盘监听
+    document.onkeydown = (event) => {
+        switch (event.code) {
+            case 'ArrowRight':
+                games.changerun('right')
+                break
+            case 'ArrowLeft':
+                games.changerun('left')
+                break
+            case 'ArrowUp':
+                games.changerun('up')
+                break
+            case 'ArrowDown':
+                games.changerun('down')
+                break
+            case 'Enter':
+                games.start()
+                break
+            case 'Space':
+                games.stop()
+                break
+            default:
+                break
+        }
+    }
+</script>
+</body>
+
+</html>

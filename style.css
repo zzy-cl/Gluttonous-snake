@@ -1,0 +1,133 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: url("https://s1.imagehub.cc/images/2022/06/02/71e79cb259a5c5bb3ce1f39ab4f974cb.jpg"), no-repeat;
+    background-size: cover;
+}
+
+.btnbox {
+    background-color: cadetblue;
+    width: 15%;
+    height: 45%;
+    margin: 0 10px;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.btnbox button {
+    width: 150px;
+    margin: 30px;
+    background-color: antiquewhite;
+    border: 0;
+    border-radius: 20px;
+    font-size: 25px;
+}
+
+.map {
+    width: 960px;
+    height: 680px;
+    background: url("https://s1.imagehub.cc/images/2022/06/15/690723e3cee9f0c88e6e292963e1d3f5.png");
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 0 0 100px black inset, 0 0 50px white;
+    z-index: 0;
+}
+
+.map > div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+div.head {
+    background: repeating-radial-gradient(white, red);
+}
+
+div.body {
+    background: repeating-radial-gradient(#a9ab67, #f1a707);
+}
+
+div.food {
+    background: repeating-radial-gradient(#e3e770, #88f107);
+    animation: foodlight 1.5s linear infinite;
+}
+
+@keyframes foodlight {
+    0% {
+        box-shadow: 0 0 10px white;
+    }
+    50% {
+        box-shadow: 0 0 30px white;
+    }
+    100% {
+        box-shadow: 0 0 10px white;
+    }
+}
+
+.score {
+    width: 15%;
+    height: 45%;
+    margin: 0 10px;
+    border-radius: 30px;
+    background-color: cadetblue;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+h1 {
+    font-size: 30px;
+    margin: 25px;
+    font-family: 宋体;
+    font-weight: 800;
+    color: #6c1a1a;
+}
+
+.score > div {
+    background-color: #cdffd2;
+    width: 100px;
+    height: 50px;
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: lightpink;
+    font-size: 40px;
+    border-radius: 25px;
+}
+
+.overbg {
+    width: 960px;
+    height: 680px;
+    background-size: cover;
+    background: url("https://s1.imagehub.cc/images/2022/06/16/gameover.png") no-repeat center;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+}
